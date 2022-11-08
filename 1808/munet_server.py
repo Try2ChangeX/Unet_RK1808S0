@@ -8,15 +8,6 @@ import time
 
 model = './upsample_Epoch_98_cpu_QUA_bs100.rknn'
 
-GRID0 = 13
-GRID1 = 26
-LISTSIZE = 85
-SPAN = 3
-NUM_CLS = 80
-MAX_BOXES = 500
-OBJ_THRESH = 0.2
-NMS_THRESH = 0.2
-obj_thresh = -np.log(1/OBJ_THRESH - 1)
 
 IMG_SAVEDIR = './imgs_noth/'
 if not os.path.exists(IMG_SAVEDIR):
